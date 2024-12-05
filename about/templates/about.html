@@ -1,0 +1,119 @@
+{% extends 'templates/base.html' %}
+{% load static %}
+{% comment %} {% load layouts_tags %} {% endcomment %}
+
+{% block head_styles %}
+<title>About | Portfolio</title>
+<link rel="stylesheet" href="{% static 'assets/css/about.css' %}?ver=7.4" type="text/css">
+{% endblock %}
+
+{% block main_content %}
+
+<!-- Hero Section -->
+<section class="hero-section bg-light">
+    <div class="container">
+      <h1 class="display-4">About Us</h1>
+      <p class="lead">Learn more about our mission and team.</p>
+    </div>
+  </section>
+
+  <!-- Company History Section -->
+  <section class="container py-5">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2>Our Story</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Curabitur ut turpis sem. Nullam convallis purus quis mi cursus, nec posuere lectus feugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum sint sunt? Excepturi reprehenderit voluptatem incidunt saepe culpa autem temporibus, voluptate enim iste distinctio repellat odit commodi reiciendis, modi, dolores quod nesciunt a sit deleniti iure dolorum itaque expedita nisi quia? Laborum distinctio autem eos alias quo tempore voluptatibus, voluptatum fugiat provident quidem. Vitae nam sint, quod facilis repellat harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab mollitia odio laboriosam ea provident aliquam, ducimus hic fuga quidem facilis unde adipisci quod facere deleniti eum possimus velit suscipit illo voluptatem ipsum? Doloribus eveniet officia, eius, dolorem ducimus ad id itaque, officiis alias iure dolores veritatis voluptate ullam mollitia cum aspernatur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus maxime maiores, ipsa corrupti sed praesentium autem non accusantium, quisquam pariatur odio unde inventore illum possimus? Neque in harum aliquid adipisci sequi ducimus? Nihil tempora porro nisi velit rerum odio doloremque. Vitae expedita quia fuga eveniet iusto fugiat! Id sapiente officiis ratione possimus quos ipsum corrupti perferendis?
+        </p>
+      </div>
+      <div class="col-lg-6">
+        <img src="{% static 'assets/img/dummy-image.jpg'%}" class="img-fluid rounded" alt="Company History">
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Members Section -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Meet Our Team</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="team-member">
+          <img src="{% static 'assets/img/dummy-profile-image.jpg'%}" alt="Team Member 1">
+          <h4>John Doe</h4>
+          <p>CEO</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="team-member">
+          <img src="{% static 'assets/img/dummy-profile-image.jpg'%}" alt="Team Member 2">
+          <h4>Jane Smith</h4>
+          <p>CTO</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="team-member">
+          <img src="{% static 'assets/img/dummy-profile-image.jpg'%}" alt="Team Member 3">
+          <h4>Emily Johnson</h4>
+          <p>Marketing Manager</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item bg-secondary">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item bg-secondary">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item bg-secondary">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+  <!-- Contact Information Section -->
+  <section class="contact-info">
+    <div class="container text-center">
+      <h2>Contact Us</h2>
+      <p>If you have any questions, feel free to reach out to us!</p>
+      <address>
+        <p><i class="bi bi-house-door"></i> 123 Business Rd, Business City, BC 12345</p>
+        <p><i class="bi bi-envelope"></i> email@example.com</p>
+        <p><i class="bi bi-phone"></i> (123) 456-7890</p>
+      </address>
+    </div>
+  </section>
+  
+
+{% endblock %}
+
+

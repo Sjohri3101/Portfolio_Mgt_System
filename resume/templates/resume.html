@@ -1,0 +1,344 @@
+{% extends 'templates/base.html' %}
+{% load static %}
+{% comment %} {% load layouts_tags %} {% endcomment %}
+
+{% block head_styles %}
+<title>Resume | Portfolio</title>
+<link rel="stylesheet" href="{% static 'assets/css/resume.css' %}?ver=7.4" type="text/css">
+{% endblock %}
+
+{% block main_content %}
+<br>
+<section class="bg-light">
+    <div class="container">
+        <div class="section">
+            <h2>Create Your Resume</h2>
+            <p>Ready to build your professional resume? Click the button below to get started.</p>
+            <a href="#templates"><button type="button" class="btn btn-outline-secondary">Create My Resume</button></a>
+        </div>
+        <div id="templates" class="section">
+            <h2>Choose a Template</h2>
+            <div class="template">
+                <div class="template-card">
+                    <img src="template1.jpg" alt="Template 1">
+                    <h3>Professional</h3>
+                    <p>Clean and professional layout suitable for all industries.</p>
+                    <a href="#" class="button">Select Template</a>
+                </div>
+                <div class="template-card">
+                    <img src="template2.jpg" alt="Template 2">
+                    <h3>Creative</h3>
+                    <p>Unique and eye-catching design perfect for creative fields.</p>
+                    <a href="#" class="button">Select Template</a>
+                </div>
+                <div class="template-card">
+                    <img src="template3.jpg" alt="Template 3">
+                    <h3>Modern</h3>
+                    <p>Contemporary design with a clean and modern aesthetic.</p>
+                    <a href="#" class="button">Select Template</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="bg-light p-4 rounded shadow-sm">
+                <h2 class="display-4 mb-3">Save Time with Resume Examples</h2>
+                <p class="lead mb-4">Check out our free resume samples for inspiration. Use the expert guides and our
+                    resume builder to create a beautiful resume in minutes. Our new and advanced resume builder will
+                    guide you from start to finish.</p>
+                <a href="#templates" class="btn btn-success btn-lg">Explore Resume Samples</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Why Use Our Free Resume Templates Section -->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-12 bg-light rounded shadow-sm p-3 m-3">
+            <h2 class="display-4 mb-4 text-center">Why Use Our Free Resume Templates?</h2>
+            <p class="lead mb-4 text-center">Resume.io’s resume templates are expertly designed to help you land your
+                next great position. Whether you’re in a hurry to submit your application or simply don’t know where to
+                start, our resume templates provide a strong foundation to make your experience and qualifications
+                shine.</p>
+
+            <h3 class="h3 mb-3 fw-bold">Advantages of Our Professional Resume Templates:</h3>
+            <ul class="list-unstyled mb-4">
+                <li class="mb-2"><strong>Easy to use:</strong> We’re all about great design with no hassle. That's why
+                    our templates are intuitive and easy to use, saving you precious time when it comes to creating a
+                    great resume.</li>
+                <li class="mb-2"><strong>ATS-friendly Resume Templates:</strong> Hiring managers aren’t the only ones
+                    who will be evaluating your resume. Our templates are designed to be easily read by both humans and
+                    automated resume scanners.</li>
+                <li class="mb-2"><strong>AI-powered sample sentences:</strong> Our templates are powered by an intuitive
+                    resume builder with features like an AI-powered summary generator and sample sentences for hundreds
+                    of job titles.</li>
+                <li class="mb-2"><strong>Highly customizable:</strong> Adapt templates to your needs by changing the
+                    color scheme, adding a photo, or adjusting line spacing with just a few clicks.</li>
+                <li class="mb-2"><strong>Adaptable for all jobs and industries:</strong> Choose from templates ranging
+                    from simple and minimalistic to modern and professional for every job and industry.</li>
+                <li class="mb-2"><strong>Free & premium options:</strong> Try our templates for free or subscribe to
+                    download as many versions as you’d like with tiered pricing plans.</li>
+                <li class="mb-2"><strong>Download as Docx or PDF format:</strong> Download your resume in either PDF or
+                    Word Docx format to meet different employer requirements.</li>
+            </ul>
+
+            <h3 class="h3 mb-3 fw-bold">Choosing the Right Resume Template</h3>
+            <p class="lead mb-4">Our resume templates are divided into four categories to help you quickly find the
+                template that’s best for you:</p>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h4 class="fw-bold">Professional Resume Templates</h4>
+                    <p>Classic styles with tried-and-true fonts and formatting. Ideal for careers in law, business,
+                        education, healthcare, finance, accounting, or real estate.</p>
+                    <p><strong>Related example:</strong> <a href="#">Lawyer Resume</a> - Proven job-specific resume
+                        example and guide for landing your next job in 2024.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h4 class="fw-bold">Creative Resume Templates</h4>
+                    <p>Bold designs with eye-catching fonts and fun color palettes. Perfect for creative professionals
+                        like artists, designers, and photographers.</p>
+                    <p><strong>Related example:</strong> <a href="#">Graphic Designer Resume</a> - Guide on creating a
+                        top-notch resume that will get you noticed.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h4 class="fw-bold">Modern Resume Templates</h4>
+                    <p>Fresh and professional designs with minimalist headers and clean lines. Suitable for IT,
+                        engineering, marketing, administration, HR, and sales roles.</p>
+                    <p><strong>Related example:</strong> <a href="#">Marketing Resume</a> - Edit this example to quickly
+                        build a perfect resume for 2024.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h4 class="fw-bold">Simple Resume Templates</h4>
+                    <p>Attractive and functional formats ideal for hospitality, retail, transportation, or students.
+                        Easy to read with just the right amount of design accents.</p>
+                    <p><strong>Related example:</strong> <a href="#">Hospitality and Catering Resume</a> - Quickly build
+                        a resume with our proven example and guide for 2024.</p>
+                </div>
+            </div>
+
+            <h3 class="h3 mb-3 fw-bold">What Makes the Best Resume Template?</h3>
+            <ul class="list-unstyled mb-4">
+                <li class="mb-2"><strong>An attractive header:</strong> Emphasizes your name and includes space for
+                    contact details and professional links.</li>
+                <li class="mb-2"><strong>Readability:</strong> A balance of white space to text ensures your resume is
+                    easy to read.</li>
+                <li class="mb-2"><strong>The right amount of space:</strong> Choose templates that fit your level of
+                    experience, with ample space for detailed entries.</li>
+                <li class="mb-2"><strong>Professional font styles and sizes:</strong> Use fonts that are easy to read
+                    and maintain a professional appearance.</li>
+                <li class="mb-2"><strong>Customizable:</strong> Templates should be easily adaptable to your needs
+                    within our builder tool.</li>
+                <li class="mb-2"><strong>The right file format:</strong> Download your resume in PDF or DOCX, as
+                    preferred by the employer.</li>
+            </ul>
+
+            <!-- Resume Template FAQs Section -->
+            <div class="container my-5">
+                <h3 class="h3 mb-3 text-center fw-bold">Resume Template FAQs</h3>
+                <!-- Accordion Column -->
+                <div class="accordion" id="resumeTemplateFAQs">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Is Resume.io builder free?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#resumeTemplateFAQs">
+                            <div class="accordion-body">
+                                Resume.io’s resume builder offers a free option, a seven-day trial option, and
+                                tiered pricing plans. Read more about using Resume.io for free <a href="#">here</a>.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                What are employers looking for in a resume in 2024?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#resumeTemplateFAQs">
+                            <div class="accordion-body">
+                                Employers are looking for resumes that quickly get to the point and show why a
+                                candidate has the exact qualifications to fill a role at their company.
+                                Customize your resume for each job you apply to. Learn more about customizing
+                                your resume <a href="#">here</a>.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                How many jobs should you list on a resume?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#resumeTemplateFAQs">
+                            <div class="accordion-body">
+                                List as much relevant experience as you’ve obtained in the past 10 years. For
+                                students or recent grads, include at least three jobs. Remove less relevant
+                                positions as you progress in your career.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                How many pages should my resume be?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#resumeTemplateFAQs">
+                            <div class="accordion-body">
+                                Keep your resume to one page in virtually all situations. Exceptions may apply
+                                for executive candidates or in countries outside the U.S. and Canada.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Which of the following should not be on your resume?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#resumeTemplateFAQs">
+                            <div class="accordion-body">
+                                Avoid including personal information such as date of birth, age, marital status,
+                                or religion. A headshot is generally unnecessary except in specific industries.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Should you put your address on your resume?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                            data-bs-parent="#resumeTemplateFAQs">
+                            <div class="accordion-body">
+                                It’s generally sufficient to include an email address and phone number. Adding a
+                                state or city is optional.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                How many bullets should you have on a resume?
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                            data-bs-parent="#resumeTemplateFAQs">
+                            <div class="accordion-body">
+                                Each employment history entry should contain 4-5 bullet points, with a minimum
+                                of three entries to total at least 12-15 bullet points.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                Do employers like resume templates?
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                            data-bs-parent="#resumeTemplateFAQs">
+                            <div class="accordion-body">
+                                Employers appreciate resumes that are easy-to-read and customized for the job
+                                description. Templates are helpful but should be personalized for each
+                                application.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingNine">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                How do I write a resume summary?
+                            </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                            data-bs-parent="#resumeTemplateFAQs">
+                            <div class="accordion-body">
+                                A great resume summary should include positive adjectives about your character,
+                                key accomplishments, and qualifications for the role.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                How do I list skills on a resume?
+                            </button>
+                        </h2>
+                        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                            data-bs-parent="#resumeTemplateFAQs">
+                            <div class="accordion-body">
+                                List skills as a bullet point list, including both technical (hard) skills and
+                                personal traits (soft skills). Refer to the job description for priority skills.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="bg-light p-0 rounded shadow-sm">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="{% static 'assets/img/dummy-image.jpg' %}" alt="">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h2 class="display-4 mb-3 mt-3">Build Your Resume in 15 Minutes</h2>
+                                        <p class="lead mb-4">
+                                            Use professional field-tested resume templates that follow the exact ‘resume
+                                            rules’
+                                            employers
+                                            look for.</p>
+                                    </div>
+                                    <div class="col-md-12 bg-secondary text-center p-0 m-0">
+                                        <!-- Button with custom CSS classes for border removal -->
+                                        <a href="#templates" class="button fs-3 text-body fw-bold">Create My Resume > </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- New Section for Professional Resume Builder -->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h2 class="display-4 mb-4">Try Our Professional Resume Builder Now!</h2>
+            <p class="lead mb-4">Save time with our easy 3-step resume builder. No more writer’s block or formatting
+                difficulties in Word. Rapidly make a perfect resume employers love.</p>
+            <a href="#templates"><button type="button" class="btn btn-outline-light btn-lg">Create My
+                    Resume</button></a>
+            <a href="#templates" class="btn btn-primary btn-lg">Resume Examples</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

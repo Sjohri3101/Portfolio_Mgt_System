@@ -1,0 +1,71 @@
+{% extends 'templates/base.html' %}
+{% load static %}
+{% comment %} {% load layouts_tags %} {% endcomment %}
+
+{% block head_styles %}
+<title>Contact | Portfolio</title>
+<link rel="stylesheet" href="{% static 'assets/css/contact.css' %}?ver=7.4" type="text/css">
+{% endblock %}
+
+{% block main_content %}
+<br>
+  <!-- Contact Us Section -->
+<section class="container bg-light">
+  <br>
+    <h1 class="text-center mb-4 mt-4 fw-bolder">Contact Us</h1>
+    <div class="row">
+      <!-- Contact Form -->
+      <div class="col-md-6">
+        <div class="contact-form bg-secondary">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <!-- Add reCAPTCHA for spam protection (optional) -->
+            <div class="mb-3">
+              <div class="g-recaptcha" data-sitekey="your-site-key"></div>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact Information and Map -->
+      <div class="col-md-6">
+        <h4 class="fw-bold">Our Contact Information</h4>
+        <p><i class="bi bi-house-door"></i> 123 Business Rd, Business City, BC 12345</p>
+        <p><i class="bi bi-envelope"></i> email@example.com</p>
+        <p><i class="bi bi-phone"></i> (123) 456-7890</p>
+        <p><i class="bi bi-clock"></i> Mon-Fri: 9:00 AM - 6:00 PM</p>
+<br>
+        <!-- Map Section -->
+        <section class="my-5">
+          <h4 class="text-center mb-4">Find Us</h4>
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.204932306078!2d-122.40146668468117!3d37.78331117975773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808e4f2dc7d9%3A0x5e3d6d72c6b5b7!2sTwitter%20HQ!5e0!3m2!1sen!2sus!4v1632094810681!5m2!1sen!2sus" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"></iframe>
+          </div>
+        </section>
+        <br><br>
+      </div>
+    </div>
+  </section>
+  <br><br>
+  <!-- Include reCAPTCHA script (optional) -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+{% endblock %}

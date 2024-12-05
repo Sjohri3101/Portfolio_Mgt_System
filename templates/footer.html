@@ -1,0 +1,37 @@
+{% load static %}
+<footer class="bg-light w-100 py-4" data-bs-theme="light" style="height:300px">
+  <div class="container">
+    <div class="row">
+      <!-- Section 1: About Us -->
+      <div class="col-md-3 mb-4 mb-md-0">
+        <h5>About Us</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+      </div>
+
+      <!-- Section 2: Services -->
+      <div class="col-md-3 mb-4 mb-md-0">
+        <h5>Services</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark">Web Design</a></li>
+          <li><a href="#" class="text-dark">Development</a></li>
+          <li><a href="#" class="text-dark">SEO</a></li>
+        </ul>
+      </div>
+
+      <!-- Section 3: Contact -->
+      <div class="col-md-3 mb-4 mb-md-0">
+        <h5>Contact</h5>
+        <p>1234 Street Name<br>City, State, 12345<br>Email: info@example.com</p>
+      </div>
+
+      <!-- Section 4: Social Media -->
+      <div class="col-md-3">
+        <h5>Follow Us</h5>
+        <a href="#" class="me-2"><img src="{% static 'assets/img/fb.png' %}" alt="Facebook" width="40" height="40"></a>
+        <a href="#" class="me-2"><img src="{% static 'assets/img/twitter.png' %}" alt="Twitter" width="50" height="50"></a>
+        <a href="#"><img src="{% static 'assets/img/Instagram.png' %}" alt="Instagram" width="50" height="50"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+

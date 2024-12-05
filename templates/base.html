@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 3rd Party Styles Libaraies -->
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/fontawesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'vendor/libs/fontawesome/css/brands.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/libs/fontawesome/css/solid.min.css' %}" rel="stylesheet">
+    {% comment %} <link rel="stylesheet" href="{% static 'assets/css/owl-carousel.min.css' %}" type="text/css"> {% endcomment %}
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}" type="text/css">
+
+    {% comment %} <link rel="stylesheet" href="{% static 'assets/css/header.css' %}?ver=4.3" type="text/css">
+    <link rel="stylesheet" href="{% static 'assets/css/footer.css' %}?ver=1.8" type="text/css" /> {% endcomment %}
+
+    <!-- End Google Tag Manager -->
+    
+    {% block head_styles %}{% endblock %}
+    <!-- Head JavaScript Libraries -->
+    {% block head_js %}{% endblock %}
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    {% include 'templates/header.html' %}
+    <!-- end of header -->
+
+    <!-- Main -->
+    {% block main_content %}{% endblock %}
+    <!-- End Main -->
+
+    <!-- Footer -->
+    {% include 'templates/footer.html' %}
+    <!-- end of Footer -->
+
+    
+    {% block app_js %}{% endblock %}
+
+    {% block js_script %}{% endblock %}
+</body>
+
+</html>
