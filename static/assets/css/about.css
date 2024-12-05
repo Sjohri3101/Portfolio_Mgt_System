@@ -1,0 +1,20 @@
+.hero-section {
+    background: url('your-hero-image.jpg') no-repeat center center;
+    background-size: cover;
+    color: rgb(32, 47, 119);
+    text-align: center;
+    padding: 100px 0;
+  }
+  .team-member {
+    text-align: center;
+  }
+  .team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  .contact-info {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+  }

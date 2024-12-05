@@ -1,0 +1,49 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.button:hover {
+    background-color: #0056b3;
+}
+.template {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.template-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+.template-card img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+.template-card h3 {
+    margin: 10px 0;
+}
+.template-card p {
+    color: #555;
+}
